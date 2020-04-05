@@ -1,0 +1,53 @@
+.Todo {
+    border: 1px solid white;
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: content-box;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-out;
+}
+
+.Todo .Content {
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.Finished {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.Todo .Actions{
+    display: block;
+    text-align: center;
+}
+
+.DeleteButton {
+    display: block;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.Todo:hover .DeleteButton{
+    display: block;
+    float: right;
+}
+
+.DeleteButton:hover {
+    color: red;
+}
+
+.deleteButton:active .Todo {
+    color: red;
+}
+
